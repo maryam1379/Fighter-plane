@@ -7,18 +7,15 @@ public class Player_Movment : MonoBehaviour
     public Transform transform;
     public float speed = 1.5f;
     public float rotationSpeed = 5f;
-public  AudioSource CoinSound;
-// public Score_Manager score_Value;
-
+//....
+    public Score_Manager score_Value;
     public GameObject gameOverPanel;
-    // Start is called before the first frame update
     void Start()
     {
         gameOverPanel.SetActive(false);
         Time.timeScale = 1;
     }
 
-    // Update is called once per frame
     void Update()
     {
        
@@ -59,7 +56,8 @@ public  AudioSource CoinSound;
                gameOverPanel.SetActive(true);
         }
         if (collision.gameObject.tag == "Energy"){
-               CoinSound.Play();
+               //...
+               score_Value.score += 5;
                Destroy(collision.gameObject);
         }
         

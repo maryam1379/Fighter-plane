@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7086d6246f26f074d8ac037241657092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyPrefabs: {fileID: 4387916908913335261, guid: a2a40af7383de5c41bb871bc54e718c1, type: 3}
+  energyPrefabs: {fileID: 6749457031462591482, guid: 2c9efb59e76f5dc4a81631f19222dea3, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +650,7 @@ MonoBehaviour:
   transform: {fileID: 1120585683}
   speed: 8
   rotationSpeed: 5
-  CoinSound: {fileID: 0}
+  score_Value: {fileID: 1120585688}
   gameOverPanel: {fileID: 0}
 --- !u!50 &1120585686
 Rigidbody2D:
