@@ -58,9 +58,8 @@ public  AudioSource CoinSound;
                Time.timeScale = 0 ;
                gameOverPanel.SetActive(true);
         }
-        if (collision.gameObject.tag == "Coin"){
+        if (collision.gameObject.tag == "Energy"){
                CoinSound.Play();
-            //    score_Value.score += 10;
                Destroy(collision.gameObject);
         }
         
