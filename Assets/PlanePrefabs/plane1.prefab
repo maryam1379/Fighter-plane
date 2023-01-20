@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 1203081003887867785, guid: 17e7104138d03024ca7170ace1ea5178, type: 3}
-  speed: 4
+  speed: 8
 --- !u!60 &8782480609289553757
 PolygonCollider2D:
   m_ObjectHideFlags: 0

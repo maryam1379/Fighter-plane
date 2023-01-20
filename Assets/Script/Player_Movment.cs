@@ -7,9 +7,9 @@ public class Player_Movment : MonoBehaviour
     public Transform transform;
     public float speed = 1.5f;
     public float rotationSpeed = 5f;
-//....
     public Score_Manager score_Value;
     public GameObject gameOverPanel;
+      public  AudioSource EnergySound;
     void Start()
     {
         gameOverPanel.SetActive(false);
@@ -56,7 +56,7 @@ public class Player_Movment : MonoBehaviour
                gameOverPanel.SetActive(true);
         }
         if (collision.gameObject.tag == "Energy"){
-               //...
+              EnergySound.Play();
                score_Value.score += 5;
                Destroy(collision.gameObject);
         }

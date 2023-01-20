@@ -5,13 +5,12 @@ using UnityEngine;
 public class Plane_Spawner : MonoBehaviour
 {
     public GameObject[] plane;
-    // Start is called before the first frame update
+
     void Start()
     {
             StartCoroutine(SpawnPlanes());
     }
 
-    // Update is called once per frame
     void Update()
     {
         

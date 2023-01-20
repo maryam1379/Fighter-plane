@@ -5,14 +5,13 @@ using UnityEngine;
 public class Plane_movment : MonoBehaviour
 {
     public Transform transform;
-    public float speed = 4f;
-    // Start is called before the first frame update
+    public float speed = 8f;
+
     void Start()
     {
         transform = GetComponent<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position -= new Vector3(0,speed * Time.deltaTime,0);
